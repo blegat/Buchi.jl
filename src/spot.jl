@@ -1,3 +1,5 @@
+#!!! fix format for dictionaries, create on demand
+
 # implementation of Büchi automata in spot
 
 ################################################################
@@ -480,10 +482,6 @@ function Base.push!(g::SpotAutomaton{Ta},edge::Pair{T,Pair{Tuple{Ta,U},T}}) wher
     Spot.new_edge!(g.x,edge.first,edge.second.second,g.d[cond[1]],cond[2])
     g
 end
-
-#!!! fix initial states for creation -- gives buggy automata
-
-#!!! fix format for dictionaries, create on demand
 
 function Base.push!(g::SpotAutomaton{Ta},edge::Pair{T,Pair{Tuple{Ta,Vector{U}},T}}) where {Ta,T<:Integer,U<:Integer}
     cond = edge.second.first

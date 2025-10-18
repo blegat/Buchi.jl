@@ -1,3 +1,5 @@
+#!!! fix initial states for creation -- gives buggy automata
+
 """CBuchiAutomaton{Ti,A}
 
 The class of closed, deterministic Büchi automata.
